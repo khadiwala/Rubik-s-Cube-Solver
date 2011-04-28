@@ -1,0 +1,43 @@
+ABOUT:
+
+Rubik's Cube Solver v0
+By Ravi Khadiwala - CS242 spring, 2011
+
+GRAPHICAL APPLICATION:
+
+    You can use a graphical interface for the solver by running guicube.py. 
+    
+    From here you can:
+    
+        - See a visual representation of the cube as it's being solved
+        - Manually manipulate the cube through individual rotations
+        - Scramble the cube, applying 200 random moves to the cube (
+        - Solve the cube (solve cube)
+        - View the solution length and sequence (solution info)
+
+STEPPING THROUGH A SOLUTION:
+
+    You can step through a solution of a cube based on a scramble string by
+    running solstepper.py.
+    
+    Usage:
+        - Enter a scramble string (f,r,u,l,d,b,',2,3) with '23 appearing after a letter
+        - Press enter to iterate through the solution
+
+CUBE LIBRARY:
+
+    The cube library represents cubes as a list of faces and functions for
+    manipulating them. You can manipulate the cube instance with the rotation
+    functions F(),R(),L(),B(),U(),D() which correspond to rotations of front,
+    right,left,back,up,and down faces. You can do a series of moves with do_string()
+
+SOLVER LIBRARY:
+
+    Uses a naieve algorithm to solve a cube.
+    
+    Usage:
+        - Create a solver instance
+        - Manipulate cube or input cube state by setting faces with face.shift_face()
+        - solve()
+    
+        solmoves will contain a string with the moves used to solve the cube

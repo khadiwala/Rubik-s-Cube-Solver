@@ -33,6 +33,10 @@ class face:
             s += "\n"
         return s
 
+    def shift_face(self,colors):
+        """input a face as list of 3 columns"""
+        self.squares = colors
+
     def shift_col(self,col,colors):
         """replace the column col with list colors"""
         self.squares[col] = colors
